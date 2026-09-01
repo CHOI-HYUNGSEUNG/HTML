@@ -1,0 +1,287 @@
+@charset "UTF-8";
+
+/* 모든 페이지에 공통 CSS */
+
+body{
+    /* 폰트 설정 */
+}
+
+.container {
+    width:1175px;
+    height:100%;
+    margin:0 auto;
+}
+
+/* Header */
+header{
+    width: 1175px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+#header_ad > img{
+    width:100%;
+    height:100%;
+    display: block;
+    margin : 0 auto;
+}
+
+#header_top{
+    width:1175px;
+    height:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#eee;
+}
+
+#header_ad{
+    width:1175px;
+    height:70px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#nav{
+    width:450px;
+    height:40px;
+    margin-left:250px;;
+}
+
+#nav > ul{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center
+}
+
+#menu{
+    width:380px;
+    height:40px;
+    margin-left:auto;
+}
+
+#menu > ul{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+#menu > ul > li{
+    font-size : 10px;
+    margin:auto 2px;
+}
+
+#header_main{
+    width:1175px;
+    height:80px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main_left{
+    width:750px;
+    height: 80px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main_logo{
+    width:180px;
+    height:70px;
+    margin-bottom:20px;
+}
+
+#main_logo > a > img{
+    width:100%;
+    height:100%;
+}
+
+#main_search{
+    width:550px;
+    height:50px;
+}
+
+#main_search form{
+    display:flex;
+    align-items:center;
+    width:100%;
+    max-width:650px;
+    height:50px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    border-radius:25px;
+    background-color:#fff;
+    box-sizing:border-box;
+}
+
+#main_search select{
+    border: none;
+    outline:none;
+    font-size:15px;
+    color:#333;
+    padding-right:15px;
+    background: tansparent;
+    cursor:pointer;
+    border-right: 1px solid #eee;
+}
+
+#main_search input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  font-size: 14px;
+  color: #333;
+  background: transparent;
+}
+
+#main_search input[type="submit"] {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0; /* 텍스트 숨기기 */
+  width: 20px;
+  height: 20px;
+  /* 돋보기 아이콘 이미지 또는 SVG 배경 적용 */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#main_right{
+    width:110px;
+    height:50px;
+    display:flex;
+    justify-content:space-between;
+}
+
+#main_right .icon{
+    width:50px;
+    height:50px;
+    border:1px solid #333;
+}
+
+
+footer{
+    width:1175px;
+    height:350px;
+    margin: 0 auto;
+}
+
+footer > hr {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+#footer_top{
+    width:1175px;
+    height:50px;
+    font-size:12px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#footer_notice{
+    width:400px;
+    height:40px;
+}
+
+#footer_more{
+    width:650px;
+    height:40px;
+    margin-left:80px;
+    display:flex;
+}
+
+#footer_bottom{
+    width:1175px;
+    height:300px;
+    display:flex;
+    justify-content: space-between;
+    font-size:10px;
+}
+
+#footer_logo{
+    width:175px;
+    height:75px;
+}
+
+#footer_logo > img{
+    width:100%;
+    height:100%;
+}
+
+#footer_menu{
+    width:700px;
+    height:40px;
+}
+
+#footer_menu > ul{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer_icons{
+    width:350px;
+    height:40px;
+}
+
+#family{
+    width: 200px;
+    height: 40px;
+
+    padding: 0 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    background-color: white;
+
+    font-size: 14px;
+    color: #333;
+
+    cursor: pointer;
+}
+
+#com_info{
+    width:700px;
+    height:50px;
+}
+
+#com_info > ul{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#com_info > ul > li {
+    margin-left : 5px;
+}
+
+#footer_toss{
+    width:350px;
+    height:70px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#footer_copyright{
+    width:150px;
+    height:30px;
+}
+
+#footer_ISMS{
+    width:350px;
+    height:50px;
+    display:flex;
+}
+
+#inner_ISMS{
+    display:flex;
+}

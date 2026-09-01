@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+/* 메인 페이지 CSS */
+#div1{
+    width:100%;
+    height:600px;
+}
+
+#div1_top{
+    width:1175px;
+    height:50px;
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-between;
+    text-align:center;
+}
+
+#div1_nav{
+    width:850px;
+    height:50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-left:20px;
+}
+
+.all_menu_btn{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    border: 1px solid #e2e2e2;
+    background-color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-left:5px;
+    cursor:pointer;
+    flex-shrink:0;
+}
+
+#div1_nav ul{
+    width:700px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#more_btn{
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    border:1px solid #fff;
+}
+
+
+#div1_nav li a.highlight {
+  color: #00a862;
+}
+
+#div1_mission{
+    width:400px;
+    height:50px;
+    display:flex;
+    align-items:center;
+}
+
+#div1_mission ul{
+    display:flex;
+    align-items:center;
+    margin-left: auto;
+    gap: 15px;
+    text-align:center;
+}
+
+#div1_bottom{
+    width:1175px;
+    height:550px;
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-between;
+    text-align:center;
+}
+
+.main_banner{
+    width:870px;
+    height:370px;
+    position:relative;
+    overflow:hidden;
+    border-radius:15px;
+}
+
+.swiper_wrapper{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+#div1_menu{
+    width:870px;
+    height:100px;
+    background-color:chartreuse;
+    margin-top: 20px;
+}
+
+#mission_slide{
+    width:265px;
+    height:400px;
+}
+
+#mission_slide img{
+    border-top-right-radius : 15px;
+    border-top-left-radius : 15px;
+}
+
+swiper-container {
+    width:265px;
+    height:400px;
+    display:flex;
+}
+
+swiper-slide{
+    text-align:center;
+    font-size:18px;
+    justify-content:center;
+    align-items:center;
+}
+
+swiper-slide img{
+    width:265px;
+    height:200px;
+    display:block;
+    object-fit:cover;
+}
+
+swiper-slide .mission_info{
+    width:265px;
+    height:200px;
+    text-align:center;
+    background-color:#eee;
+    flex-direction:column;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.swiper-pagination{
+    top:50%;
+    bottom:auto;
+}
+#div1_ad{
+    width:265px;
+    height:90px;
+    background-color:crimson;
+}
+
+.ad{
+    width:1175px;
+    height:200px;
+    margin:0 auto;
+    display:flex;
+    text-align:center;
+    background-color:green;
+}
+
+.div_ad{
+    width:587px;
+    height:200px;
+    border:1px solid #333;
+}
+
+
+/* Author_recommend */
+
+.recommend {
+    width: 1175px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+#slider {
+    width: 100%;
+    height: 300px;
+}
+
+#slider .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+#slider .swiper-slide {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#slider .slide_content {
+    width: 15%;
+    height: 90%;
+    border-radius: 20px;
+    background-color: beige;
+}
+
+#slider .swiper-pagination-bullet-active {
+    background-color: red;
+}
+
+#slider .swiper-button-next{
+    right: -30px;
+}
+#slider .swiper-button-prev {
+    left : -30px;
+}
+
+.recommend{
+    width:1175px;
+    height:350px;
+    margin:0 auto;
+}
+
+.recommend_Slider{
+    width:1175px;
+    height:310px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.books{
+    width:180px;
+    height:310px;
+    background-color:orange;
+}
+
+.big_ad{
+    width:1175px;
+    height:150px;
+    margin:0 auto;
+    border-radius : 15px;
+    background-color:purple;
+}
+
+/* CASTING */
+#casting{
+    width:1175px;
+    height:350px;
+    margin:0 auto;
+}
+
+.casting_slider{
+    width:1175px;
+    height:300px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.casting_info{
+    width:220px;
+    height:300px;
+    background-color:tomato;
+}
+
+#event{
+    width:1175px;
+    height:250px;
+    margin:0 auto;
+}
+
+.event_slider{
+    width:1175px;
+    height:200px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.event_info{
+    width:375px;
+    height: 160px;
+    border-radius:10px;
+    background-color:cyan;
+}

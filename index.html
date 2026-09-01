@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/index.js"></script>
+
+    <title>교보문고</title>
+</head>
+<body>
+    <!-- Header -->
+    <div id="wrap">
+        <header>
+            <div id="header_ad"><img src="./img/main/header_ad.jpg" alt="상단 광고"></div>
+            <div id="header_top">
+                <div id="nav">
+                    <ul>
+                        <li><a href="#">교보문고</a></li>
+                        <li><a href="#">eBook</a></li>
+                        <li><a href="#">sam</a></li>
+                        <li><a href="#">핫트랙스</a></li>
+                        <li><a href="#">바로출판</a></li>
+                    </ul>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li><a href="#">회원가입</a></li>
+                        <li>|</li>
+                        <li><a href="#">로그인</a></li>
+                        <li>|</li>
+                        <li><a href="#">회원혜택</a></li>
+                        <li>|</li>
+                        <li><a href="#">주문배송</a></li>
+                        <li>|</li>
+                        <li><a href="#">매장안내</a></li>
+                        <li>|</li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="header_main">
+                <div id="main_left">
+                    <div id="main_logo"><a href="#"><img src="./img/main/logo.svg" alt="교보문고 로고"></a></div>
+                    <div id="main_search">
+                        <form action="">
+                            <select name="category" id="category">
+                                <option value="all">통합검색</option>
+                                <option value="eBook">eBook</option>
+                                <option value="sam">sam</option>
+                                <option value="hot_tracks">핫트랙스</option>
+                            </select>
+                            <p>|</p>
+                            <input type="text" name="search" placeholder="조선을 뒤흔든 희대의 범죄 파일이 열린다">
+                            <input type="submit" value="돋보기">
+                        </form>
+                    </div>
+                </div>
+                <div id="main_right">
+                    <div class="icon">장바구니</div>
+                    <div class="icon">Mypage</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Div1 -->
+        <div id="div1">
+            <div id="div1_top">
+                <div id="div1_nav">
+                    <button class="all_menu_btn" aria-label="전체메뉴">menu</button>
+                    <ul>
+                        <li><a class="highlight badge" href="#">신학기혜택</a></li>
+                        <li><a class="highlight badge" href="#">버핏과멍거</a></li>
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">신상품</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">바로펀딩</a></li>
+                        <li><a href="#">PICKS</a></li>
+                        <li><a href="#">CASTing</a></li>
+                        <li><a href="#">컬처라운지 </a></li>
+                        <li><button id="more_btn">+</button></li> 
+                    </ul>
+                </div>
+                <div id="div1_mission">
+                    <ul>
+                        <li><a href="#">오늘의 미션</a></li>
+                        <li><a href="#">할인혜택</a></li>
+                        <li><a href="#">읽는사람들 2회차 ▼</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="div1_bottom">
+                <div id="div1_bottom_left">
+                    <!-- 메인 광고 -->
+                    <div class="main_banner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-content"><img src="./img/main/main_ad1.jpg" alt=""></div>
+                                <div class="swiper-content"><img src="./img/main/main_ad2.jpg" alt=""></div>
+                                <div class="swiper-content"><img src="./img/main/main_ad3.jpg" alt=""></div>
+                            </div>
+                            <div class="slider_controls">
+                                <button type="button" class="pause_btn">||</button>
+                                <div class="pagination">
+                                    <button type="button" class="prev_btn">&lt;</button>
+                                    <span class="page_num">
+                                        <strong class="current">01</strong> - <span class="total">03</span>
+                                    </span>
+                                    <button type="button" class="next_btn">&gt;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="div1_menu">
+                        <div class="menu_list">
+                            <div class="box">아이콘</div>
+                            <p>혜택.이벤트</p>
+                        </div>
+                        <div class="menu_list">
+                            <div class="box">아이콘</div>
+                            <p>오늘만 특가</p>
+                        </div>
+                        <div class="menu_list">
+                            <div class="box">아이콘</div>
+                            <p>APP헤택</p>
+                        </div>
+                        <div class="menu_list">
+                            <div class="box">아이콘</div>
+                            <p>기프트카드</p>
+                        </div>
+                        <div class="menu_list">
+                            <div class="box">아이콘</div>
+                            <p>바로출판</p>
+                        </div>
+                        <div class="menu_list">
+                            <div class="box">아이콘</div>
+                            <p>이달의 책</p>
+                        </div>
+                        <div class="menu_list">
+                            <div class="box">아이콘</div>
+                            <p>손글씨대회</p>
+                        </div>
+                        <div class="menu_list">
+                            <div class="box">아이콘</div>
+                            <p>오늘의 굿즈</p>
+                        </div>
+                        <div class="menu_list">
+                            <div class="box">아이콘</div>
+                            <p>트렌드+</p>
+                        </div>
+                        <div class="menu_list">
+                            <div class="box">아이콘</div>
+                            <p>책그리고꽃</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="div1_bottom_right">
+                    <div id="mission_slide">
+                        <swiper-container class="mission" pagination="true" pagination-dynamic-bullets="true">
+                            <swiper-slide>
+                                <img src="./img/main/mission1.jpg" alt="">
+                                <div class="mission_info">
+                                    <h6 style="color:cornflowerblue;">바로펀딩</h6>
+                                    <p>일본아마존분야1위!<br>초고속주식투자법</p>
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <img src="./img/main/mission2.jpg" alt="">
+                                <div class="mission_info">
+                                    <h6 style="color:cornflowerblue;">오늘만 특가</h6>
+                                    <p>소이믹스 휴대용 독서등<br>오늘만 15,900원!</p>
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <img src="./img/main/mission3.jpg" alt="">
+                                <div class="mission_info">
+                                    <h6 style="color:cornflowerblue;">바로펀딩</h6>
+                                    <p>공부에도<br>가속도가 붙을 수 있다!</p>
+                                </div>
+                            </swiper-slide>
+                        </swiper-container>
+                    </div>
+                    <div id="div1_ad">광고</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Div2 -->
+        <div class="ad">
+            <div class="div_ad">광고1</div>
+            <div class="div_ad">광고2</div>
+        </div>
+
+        <!-- Author_recommend -->
+         <div class="recommend">
+    <h2>61인의 작가가 권하는 한권의 책</h2>
+    <div id="slider">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide_content"></div>
+                    <div class="slide_content"></div>
+                    <div class="slide_content"></div>
+                    <div class="slide_content"></div>
+                    <div class="slide_content"></div>
+                    <div class="slide_content"></div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide_content"></div>
+                    <div class="slide_content"></div>
+                    <div class="slide_content"></div>
+                    <div class="slide_content"></div>
+                    <div class="slide_content"></div>
+                    <div class="slide_content"></div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide_content"></div>
+                    <div class="slide_content"></div>
+                    <div class="slide_content"></div>
+                    <div class="slide_content"></div>
+                    <div class="slide_content"></div>
+                    <div class="slide_content"></div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </div>
+</div>
+
+        <!-- Publisher recommed -->
+         <div class="recommend">
+            <h2>출판사에서 자신있게 추천해요</h2>
+            <div class ="recommend_Slider">
+                <div class="books">1</div>
+                <div class="books">2</div>
+                <div class="books">3</div>
+                <div class="books">4</div>
+                <div class="books">5</div>
+                <div class="books">6</div>
+            </div>
+         </div>
+
+         <!-- MD recommend -->
+        <div class= "recommend">
+            <h2>MD들이 신중하게 골랐어요</h2>
+            <div class="recommend_Slider">
+                <div class="books">1</div>
+                <div class="books">2</div>
+                <div class="books">3</div>
+                <div class="books">4</div>
+                <div class="books">5</div>
+                <div class="books">6</div>
+            </div>
+         </div>
+
+         <!-- Div3 -->
+        <div class="ad">
+            <div class="div_ad">광고1</div>
+            <div class="div_ad">광고2</div>
+        </div>
+
+        <!-- High Demand -->
+        <div class= "recommend">
+            <h2>사람들이 많이 찾고 있어요</h2>
+            <div class="recommend_Slider">
+                <div class="books">1</div>
+                <div class="books">2</div>
+                <div class="books">3</div>
+                <div class="books">4</div>
+                <div class="books">5</div>
+                <div class="books">6</div>
+            </div>
+         </div>
+
+        <!-- Only Kyobo -->
+
+         <div class= "recommend">
+            <h2>교보문고에서 만날 수 있어요</h2>
+            <div class="recommend_Slider">
+                <div class="books">1</div>
+                <div class="books">2</div>
+                <div class="books">3</div>
+                <div class="books">4</div>
+                <div class="books">5</div>
+                <div class="books">6</div>
+            </div>
+         </div>
+
+         <!-- Big ad -->
+          <div class="big_ad">큰 광고</div>
+
+        <!-- Made By Kyobo-->
+        <div class= "recommend">
+            <h2>교보문고가 만들었어요</h2>
+            <div class="recommend_Slider">
+                <div class="books">1</div>
+                <div class="books">2</div>
+                <div class="books">3</div>
+                <div class="books">4</div>
+                <div class="books">5</div>
+                <div class="books">6</div>
+            </div>
+        </div>
+
+        <!-- POD -->
+        <div class= "recommend">
+            <h2>바로출판 POD</h2>
+            <div class="recommend_Slider">
+                <div class="books">1</div>
+                <div class="books">2</div>
+                <div class="books">3</div>
+                <div class="books">4</div>
+                <div class="books">5</div>
+                <div class="books">6</div>
+            </div>
+        </div>
+
+        <!-- CASTING -->
+        <div id="casting">
+            <h2>CASTing</h2>
+            <div class="casting_slider">
+                <div class="casting_info">1</div>
+                <div class="casting_info">2</div>
+                <div class="casting_info">3</div>
+                <div class="casting_info">4</div>
+                <div class="casting_info">5</div>
+            </div>
+        </div>
+
+        <!-- Event -->
+         <div id="event">
+            <h2>이벤트 정성이 달라요</h2>
+            <div class="event_slider">
+                <div class="event_info">1</div>
+                <div class="event_info">2</div>
+                <div class="event_info">3</div>
+            </div>
+         </div>
+        <!-- Footer -->
+        <footer>
+            <div id="footer_top">
+                <hr>
+                <div id="footer_notice">
+                    <a href="#"><b>공지사항 ></b></a>
+                    <a href="#" style="margin-left:15px;">회원등급 산정 순수구매액'교보e캐시'적용 기준 변경 안내</a>
+                </div>
+                <div id="footer_more">
+                    <a href="#">더보기+</a>
+                    <a href="#" style="margin-left:60px;"><b>당첨자발표</b></a>
+                    <a href="#" style="margin-left:40px;">[로맨스/BL소설][25년 8월]로B 50년 대여 (지연 안내)</a>
+                </div>
+                <hr>
+            </div>
+            <div id="footer_bottom">
+                <div id="f_bottom_left">
+                    <div id="footer_logo"><img src="./img/main/logo.svg" alt="교보문고 로고"></div>
+                    <div id="footer_menu">
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li>|</li>
+                            <li><a href="#">이용약관</a></li>
+                            <li>|</li>
+                            <li><a href="#" style="text-decoration:underline;">개인정보처리방침</a></li>
+                            <li>|</li>
+                            <li><a href="#">청소년보호정책</a></li>
+                            <li>|</li>
+                            <li><a href="#">대량주문안내</a></li>
+                            <li>|</li>
+                            <li><a href="#">협력사여러분</a></li>
+                            <li>|</li>
+                            <li><a href="#">채용정보</a></li>
+                            <li>|</li>
+                            <li><a href="#">광고소개</a></li>
+                        </ul>
+                    </div>
+                    <div id="com_info">
+                        <ul>
+                            <li>대표이사:허정도</li>
+                            <li>|</li>
+                            <li>서울특별시 종로구 종로1</li>
+                            <li>|</li>
+                            <li>사업자등록번호:102-81-11670 </li>
+                        </ul>
+                        <ul>
+                            <li>대표전화:1544-1900(발신자 부담전화)</li>
+                            <li>|</li>
+                            <li>FAX:0502-987-5711(지역번호 공통)</li>
+                            <li>|</li>
+                            <li>서울특별시 통신판매업신고번호:제 653호</li>
+                            <li>|</li>
+                            <li>사업자정보확인</li>
+                        </ul>
+                    </div>
+                    <div id="footer_copyright"> ⓒKYOBO BOOK CENTRE</div>
+                </div>
+                <div id="f_bottom_right">
+                    <div id="footer_icons">
+                        <form action="">
+                            <select name="Failmy Site" id="family">
+                                <option value="" default>Family Site</option>
+                                <option value=""><a href="#">교보생명</a></option>
+                                <option value=""><a href="#">교보증권</a></option>
+                                <option value=""><a href="#">교보DTS</a></option>
+                                <option value=""><a href="#">교보리얼코</a></option>
+                                <option value=""><a href="#">교보악사자산운용</a></option>
+                                <option value=""><a href="#">교보라이프플래닛생명</a></option>
+                                <option value=""><a href="#">KCA 손해사정</a></option>
+                                <option value=""><a href="#">KCA 서비스</a></option>
+                                <option value=""><a href="#">교보자산신탁주식회사</a></option>
+                                <option value=""><a href="#">교보AIM자산운용</a></option>
+                                <option value=""><a href="#">교보다솜케어</a></option>
+                                <option value=""><a href="#">A&D신용정보</a></option>
+                                <option value=""><a href="#">대산문화재단</a></option>
+                                <option value=""><a href="#">대산농촌재단</a></option>
+
+                            </select>
+                        </form>
+                    </div>
+                    <div id="footer_toss">
+                        <p>토스페이먼츠 구매안전서비스</p>
+                        <button style="font-size:10px;">서비스가입확인</button>
+                        <p>고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 토스페이먼츠의 구매안전서비스를 이용하실 수 있습니다.</p>
+                    </div>
+                    <div id="footer_ISMS">
+                        <div id="inner_ISMS">
+                            <img src="./img/main/ISMS.png" alt="">
+                            <p style="margin-left:5px;">정보보호관리체계 <br> ISMS인증획득</p>
+                        </div>
+                        <p>
+                            [인증범위]인터넷 교보문고 및 브랜드 서비스 운영<br>
+                            [유효기간]2023.11.15~2026.11.14
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <hr>
+</body>
+</html>
