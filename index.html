@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-element-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <script src="./js/index.js" defer></script>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
-    <script src="./js/index.js"></script>
 
     <title>교보문고</title>
 </head>
@@ -109,7 +108,7 @@
                             <div class="slider_controls">
                                 <button type="button" class="pause_btn">||</button>
                                 <div class="pagination">
-                                    <button type="button" class="prev_btn">&lt;</button>
+                                    <button type="button" class="prev_btn">&lt;</button>m
                                     <span class="page_num">
                                         <strong class="current">01</strong> - <span class="total">03</span>
                                     </span>
@@ -124,133 +123,185 @@
                             <p>혜택.이벤트</p>
                         </div>
                         <div class="menu_list">
-                            <div class="box">아이콘</div>
+                            <div class="box"><img src="./img/main/sale.svg" alt=""></div>
                             <p>오늘만 특가</p>
                         </div>
                         <div class="menu_list">
-                            <div class="box">아이콘</div>
+                            <div class="box"><img src="./img/main/app.svg" alt=""></div>
                             <p>APP헤택</p>
                         </div>
                         <div class="menu_list">
-                            <div class="box">아이콘</div>
+                            <div class="box"><img src="./img/main/giftcard.svg" alt=""></div>
                             <p>기프트카드</p>
                         </div>
                         <div class="menu_list">
-                            <div class="box">아이콘</div>
+                            <div class="box"><img src="./img/main/publish.svg" alt=""></div>
                             <p>바로출판</p>
                         </div>
                         <div class="menu_list">
-                            <div class="box">아이콘</div>
+                            <div class="box"><img src="./img/main/monthly.svg" alt=""></div>
                             <p>이달의 책</p>
                         </div>
                         <div class="menu_list">
-                            <div class="box">아이콘</div>
+                            <div class="box"><img src="./img/main/handwirte.svg" alt=""></div>
                             <p>손글씨대회</p>
                         </div>
                         <div class="menu_list">
-                            <div class="box">아이콘</div>
+                            <div class="box"><img src="./img/main/goods.svg" alt=""></div>
                             <p>오늘의 굿즈</p>
                         </div>
                         <div class="menu_list">
-                            <div class="box">아이콘</div>
+                            <div class="box"><img src="./img/main/trent.svg" alt=""></div>
                             <p>트렌드+</p>
                         </div>
                         <div class="menu_list">
-                            <div class="box">아이콘</div>
+                            <div class="box"><img src="./img/main/bookandflower.svg" alt=""></div>
                             <p>책그리고꽃</p>
                         </div>
                     </div>
                 </div>
                 <div id="div1_bottom_right">
                     <div id="mission_slide">
-                        <swiper-container class="mission" pagination="true" pagination-dynamic-bullets="true">
-                            <swiper-slide>
-                                <img src="./img/main/mission1.jpg" alt="">
-                                <div class="mission_info">
-                                    <h6 style="color:cornflowerblue;">바로펀딩</h6>
-                                    <p>일본아마존분야1위!<br>초고속주식투자법</p>
+                        <div class="container">
+                        <!-- Swiper -->
+                        <div class="swiper s1Swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/main/mission1.jpg" alt="">
+                                    <div class="mission_info">
+                                        <h6>오늘만 특가</h6>
+                                        <p>부이 폴딩 디지털 카메라<br>오늘만 38,400원!</p>
+                                    </div>
                                 </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <img src="./img/main/mission2.jpg" alt="">
-                                <div class="mission_info">
-                                    <h6 style="color:cornflowerblue;">오늘만 특가</h6>
-                                    <p>소이믹스 휴대용 독서등<br>오늘만 15,900원!</p>
+                                <div class="swiper-slide">
+                                    <img src="./img/main/mission2.jpg" alt="">
+                                    <div class="mission_info">
+                                        <h6>바로펀딩</h6>
+                                        <p>일본 아마존 분야 1위!<br>초고속 주식 투자법</p>
+                                    </div>
                                 </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <img src="./img/main/mission3.jpg" alt="">
-                                <div class="mission_info">
-                                    <h6 style="color:cornflowerblue;">바로펀딩</h6>
-                                    <p>공부에도<br>가속도가 붙을 수 있다!</p>
+                                <div class="swiper-slide">
+                                    <img src="./img/main/mission3.png" alt="">
+                                    <div class="mission_info">
+                                        <h6>오늘의 미션</h6>
+                                        <p>교보증권 이벤트 참여만 해도<br>스톡나우 Pro무료</p>
+                                    </div>
                                 </div>
-                            </swiper-slide>
-                        </swiper-container>
+                                <div class="swiper-slide">
+                                    <img src="./img/main/mission4.jpg" alt="">
+                                    <div class="mission_info">
+                                        <h6>바로펀딩</h6>
+                                        <p>공부에도<br>가속도가 붙을 수 있다!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/main/mission5.jpg" alt="">
+                                    <div class="mission_info">
+                                        <h6>오늘만 특가</h6>
+                                        <p>미테르 e북 태블릿 파우치<br>오늘만 6,000원!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/main/mission6.jpg" alt="">
+                                    <div class="mission_info">
+                                        <h6>바로펀딩</h6>
+                                        <p>부동산 가격표 뒤<br>도시를 읽는 안목!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>           
+                </div>
+                    <div id="div1_ad">
+                        <a href="#">
+                            <img src="./img/main/sub_ad.png" alt="">
+                        </a>
                     </div>
-                    <div id="div1_ad">광고</div>
                 </div>
             </div>
         </div>
 
         <!-- Div2 -->
         <div class="ad">
-            <div class="div_ad">광고1</div>
-            <div class="div_ad">광고2</div>
+            <div class="div_ad">
+                <a href="#">
+                    <img src="./img/main/mid_ad1.jpg" alt="">
+                </a>
+            </div>
+            <div class="div_ad">
+                <a href="#">
+                    <img src="./img/main/mid_ad2.png" alt="">
+                </a>
+            </div>
         </div>
 
         <!-- Author_recommend -->
-         <div class="recommend">
-    <h2>61인의 작가가 권하는 한권의 책</h2>
-    <div id="slider">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="slide_content"></div>
-                    <div class="slide_content"></div>
-                    <div class="slide_content"></div>
-                    <div class="slide_content"></div>
-                    <div class="slide_content"></div>
-                    <div class="slide_content"></div>
+        <div class="recommend">
+            <h2>트렌드+가 지금 읽을 책을 골랐어요</h2>
+            <div id="recommend_slider">
+                <div class="container">
+                    <!-- Swiper -->
+                    <div class="swiper recommend_Slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                            </div>
+                        </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-
-                <div class="swiper-slide">
-                    <div class="slide_content"></div>
-                    <div class="slide_content"></div>
-                    <div class="slide_content"></div>
-                    <div class="slide_content"></div>
-                    <div class="slide_content"></div>
-                    <div class="slide_content"></div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="slide_content"></div>
-                    <div class="slide_content"></div>
-                    <div class="slide_content"></div>
-                    <div class="slide_content"></div>
-                    <div class="slide_content"></div>
-                    <div class="slide_content"></div>
-                </div>
-
             </div>
-
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-
         </div>
-    </div>
-</div>
 
         <!-- Publisher recommed -->
          <div class="recommend">
-            <h2>출판사에서 자신있게 추천해요</h2>
-            <div class ="recommend_Slider">
-                <div class="books">1</div>
-                <div class="books">2</div>
-                <div class="books">3</div>
-                <div class="books">4</div>
-                <div class="books">5</div>
-                <div class="books">6</div>
+            <h2>북 퍼포먼스 예능 읽는 사람들</h2>
+            <div id="performance_slider">
+                <div class="container">
+                    <!-- Swiper -->
+                    <div class="swiper recommend_Slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                                <div class="slide_content"></div>
+                            </div>
+                        </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
          </div>
 
