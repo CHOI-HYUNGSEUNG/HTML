@@ -115,13 +115,13 @@
     height:100%;
 }
 
-.swiper-wrapper {
+#mission_slide .swiper-wrapper {
     width:265px;
     height:350px;
     display:flex;
 }
 
-.swiper-slide{
+#mission_slide .swiper-slide{
     text-align:center;
     font-size:18px;
     justify-content:center;
@@ -129,7 +129,7 @@
 
 }
 
-.swiper-slide img{
+#mission_slide .swiper-slide img{
     width:265px;
     height:200px;
     display:block;
@@ -175,10 +175,14 @@
     border-radius:15px;
 }
 
+/* 중간 광고1 */
+/* 중간 광고2 */
+
 .ad{
     width:1175px;
     height:200px;
     margin:0 auto;
+    margin-top : 50px;
     display:flex;
     justify-content:space-between;
 }
@@ -194,12 +198,71 @@
     border-radius:15px;
 }
 
-/* Author_recommend */
+/* 출판사가 자신있게 추천해요 */
+
+#section3 {
+    width:1175px;
+    height:350px;
+    margin:0 auto;
+    margin-top:70px;
+}
+
+#section3 .books{
+    display:flex;
+    justify-content:space-between;
+}
+
+.section3_book{
+    width:180px;
+    height:300px;
+    font-size:12px;
+}
+
+.section3_book img{
+    width:180px;
+    height:260px;
+    object-fit:cover;
+}
+
+
+
+/* 트렌드+가 지금 읽을 책을 골랐어요 */
+
+#recommend_slider{
+    width:1175px;
+    margin:0 auto;
+    position:relative;
+}
+
+.recommend_Slider{
+    width:100%;
+    overflow:hidden;
+}
+
+.recommend_Slider .swiper-wrapper{
+    display:flex;
+}
+
+.recommend_Slider .swiper-slide{
+    width:170px;
+    display:flex;
+    flex-direction:column;
+}
+
+.recommend_Slider img{
+    width: 180px;    
+    height: 260px;    
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+/* 북 퍼포먼스 예능 읽는 사람들 */
 
 .recommend{
     width: 1175px;
     height: 350px;
     margin: 0 auto;
+    margin-top:50px;
 }
 
 .recommend_Slider{
@@ -219,12 +282,260 @@
     align-items:center;
 }
 
-.swiper-button-next{
-    right: -15px;
+
+/* ------------------------- */
+
+/* 나만의 취향으로 가득 채운 책상 풍경 */
+
+#mychoice .container{
+    position:relative;
 }
 
-.swiper-button-prev{
-    left: -15px;
+.mychoice_Slider{
+    width:100%;
+    height:310px;
+}
+
+.mychoice_Slider .slide_content{
+    width:180px;
+    height:180px;
+    text-align:left;
+}
+
+/* 사람들이 많이 찾고 있어요 */
+#section4 {
+    width:1175px;
+    height:350px;
+    margin:0 auto;
+    margin-top:70px;
+}
+
+#section4 .books{
+    display:flex;
+    justify-content:space-between;
+}
+
+.section4_book{
+    width:180px;
+    height:300px;
+    font-size:12px;
+}
+
+.section4_book img{
+    width:180px;
+    height:260px;
+    object-fit:cover;
+}
+
+/* AI추천 Picks */
+#AI{
+    display:flex;
+}
+
+#AIPicks_info{
+    width:250px;
+    height:300px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#info_top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#info_top img {
+    height: 90px;
+    width: auto;
+    object-fit: contain;
+}
+
+#info_top a {
+    font-size: 13px;
+    color: #999;
+    white-space: nowrap;
+}
+#info_bottom {
+    width: 100%;
+}
+#info_bottom p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #555;
+
+    text-align: left;
+}
+#info_bottom a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+}
+#info_bottom a p {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #4B7BEC;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #4B7BEC;
+    text-align: center;
+    box-sizing: border-box;
+    transition: background-color 0.2s;
+}
+
+#info_bottom a p:hover {
+    background-color: #4B7BEC;
+    color: #fff;
+}
+
+ #section5_books{
+    width:900px;
+    height:350px;
+    margin:0 auto;
+    margin-top:70px;
+    display:flex;
+    text-align:center;
+    justify-content:space-between;
+}
+
+.section5_book{
+    width:180px;
+    height:300px;
+    font-size:12px;
+}
+
+.section5_book img{
+    width:180px;
+    height:260px;
+    object-fit:cover;
+}
+
+h2{
+    margin-bottom: 15px;
+}
+
+/* 바로출판POD */
+#POD{
+    width:1175px;
+    margin:0 auto;
+    position:relative;
+}
+
+.POD_Swiper{
+    width:100%;
+    overflow:hidden;
+}
+
+.POD_Swiper .swiper-wrapper{
+    display:flex;
+}
+
+.POD_Swiper .swiper-slide{
+    width:170px;
+    display:flex;
+    flex-direction:column;
+}
+
+.POD_Swiper img{
+    width: 180px;    
+    height: 260px;    
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+/* 교보문고에서만 만날 수 있어요 */
+.OK_item{
+    width:180px;
+    height:250px;
+    display:flex;
+}
+
+#items{
+    display:flex;
+    justify-content: space-between;
+}
+.OK_item img{
+    width:180px;
+    height:180px;
+}
+
+/* 한 줄 광고 */
+.big_ad{
+    width:1175px;
+    height:150px;
+    margin:0 auto;
+}
+
+.big_ad img{
+    width:100%;
+    border-radius:15px;
+}
+
+/* CASTING */
+#casting{
+    width:1175px;
+    margin:0 auto;
+    position:relative;
+}
+
+.Casting_Swiper{
+    width:100%;
+    overflow:hidden;
+}
+
+.Casting_Swiper .swiper-wrapper{
+    display:flex;
+}
+
+.Casting_Swiper .swiper-slide{
+    width:170px;
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+}
+
+.Casting_Swiper img{
+    width: 180px;    
+    height: 180px;    
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+/* 이벤트 정성이 달라요 */
+
+#event{
+    width:1175px;
+    height:250px;
+    margin:0 auto;
+}
+
+.event_slider{
+    width:1175px;
+    height:200px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.event_info{
+    width:375px;
+    height: 160px;
+    border-radius:10px;
+}
+
+#event img{
+    width: 100%;
+    object-fit: cover;
+    border-radius:15px;
 }
 
 /* Slider 책 설정 */
@@ -250,52 +561,4 @@
     font-size: 13px;
     line-height: 1.4;
     color:#333;
-}
-
-.big_ad{
-    width:1175px;
-    height:150px;
-    margin:0 auto;
-    border-radius : 15px;
-    background-color:purple;
-}
-
-/* CASTING */
-#casting{
-    width:1175px;
-    height:350px;
-    margin:0 auto;
-}
-
-.casting_slider{
-    width:1175px;
-    height:300px;
-    display:flex;
-    justify-content:space-between;
-}
-
-.casting_info{
-    width:220px;
-    height:300px;
-    background-color:tomato;
-}
-
-#event{
-    width:1175px;
-    height:250px;
-    margin:0 auto;
-}
-
-.event_slider{
-    width:1175px;
-    height:200px;
-    display:flex;
-    justify-content:space-between;
-}
-
-.event_info{
-    width:375px;
-    height: 160px;
-    border-radius:10px;
-    background-color:cyan;
 }
