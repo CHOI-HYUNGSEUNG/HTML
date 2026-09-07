@@ -657,7 +657,8 @@
 /* 트렌드+가 지금 읽을 책을 골랐어요 */
 #trend {
     width: 1175px;
-    height: 400px;
+    /* height: 400px;  <- 삭제 또는 auto로 변경하여 내용에 맞춰 늘어나게 합니다. */
+    height: auto; 
     margin: 100px auto 0;
 }
 
@@ -666,13 +667,20 @@
     margin: 0 auto;
     position: relative;
 }
+
+.recommend_Slider {
+    width: 1175px;
+    height: auto; /* 고정 높이 해제 */
+    display: flex;
+    justify-content: space-between;
+}
+
 .recommend_Slider .swiper-wrapper {
     display: flex;
 }
 
 .recommend_Slider .swiper-slide {
     width: 170px;
-
     display: flex;
     flex-direction: column;
 }
@@ -680,29 +688,18 @@
 .recommend_Slider img {
     width: 180px;
     height: 260px;
-
     object-fit: cover;
-
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-}
-
-.recommend_Slider {
-    width: 1175px;
-    height: 310px;
-
-    display: flex;
-    justify-content: space-between;
 }
 
 #trend .swiper-slide {
     width: 100%;
-    height: 310px;
-
+    height: auto; /* 310px 고정 해제 */
     text-align: center;
     font-size: 15px;
-
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* 세로 정렬로 변경 */
+    justify-content: flex-start;
     align-items: center;
 }
 
