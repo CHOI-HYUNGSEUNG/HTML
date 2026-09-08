@@ -615,22 +615,16 @@ const performanceSwiper = new Swiper('#performance_slider .performance_Slider', 
 });
 
 
-
-// ========================================
 // 나만의 취향으로 가득 채운 책상 풍경
-// ========================================
 
 const mychoiceSwiper = new Swiper(
     '#mychoice .mychoice_Slider',
     {
-
         slidesPerView: 1,
-
         navigation: {
             nextEl: '#mychoice .swiper-button-next',
             prevEl: '#mychoice .swiper-button-prev'
         }
-
     }
 );
 

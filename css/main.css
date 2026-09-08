@@ -253,44 +253,38 @@
 
 
 /* 오늘의 선택 */
-
 #today_choice {
-    width: 1175px;
+    width: 100%;
     height: 400px;
     margin: 65px auto 0;
 }
 
 #tc_top {
-    width: 100%;
+    width: 1175px;
     height: 35px;
-
+    margin:0 auto;
     display: flex;
     align-items: center;
 }
 
 #tc_top h2 {
     margin: 0 !important;
-
     font-size: 22px;
     font-weight: 700;
     color: #222;
-
     white-space: nowrap;
 }
 
 #tc_top ul {
     display: flex;
     align-items: center;
-
     gap: 20px;
     margin: 0 0 0 35px !important;
-
     font-size: 12px;
 }
 
 #tc_top p {
     margin: 0 0 0 650px !important;
-
     font-size: 13px;
     color: #888;
 }
@@ -299,7 +293,7 @@
     width: 1175px;
     height: 330px;
     margin-top: 25px;
-
+    margin:0 auto;
     position: relative;
 }
 
@@ -312,7 +306,6 @@
 #tc_slider .tc_Slider {
     width: 1175px;
     height: 330px;
-
     overflow: hidden;
 }
 
@@ -323,14 +316,10 @@
 #tc_slider .tc_Slider .swiper-slide {
     width: 1175px !important;
     height: 330px;
-
     flex-shrink: 0;
-
     box-sizing: border-box;
-
     margin: 0;
     padding: 0;
-
     display: block;
 }
 
@@ -464,39 +453,6 @@
     -webkit-line-clamp: 2;
 }
 
-
-/* 버튼 */
-
-#tc_slider .swiper-button-prev,
-#tc_slider .swiper-button-next {
-    z-index: 20;
-
-    width: 36px;
-    height: 36px;
-
-    border: 1px solid #ddd;
-    border-radius: 50%;
-
-    background-color: #fff;
-}
-
-#tc_slider .swiper-button-prev {
-    left: 0;
-}
-
-#tc_slider .swiper-button-next {
-    right: 0;
-}
-
-#tc_slider .swiper-button-prev::after,
-#tc_slider .swiper-button-next::after {
-    font-size: 13px;
-    font-weight: 700;
-
-    color: #333;
-}
-
-
 /* 중간 광고1 */
 /* 중간 광고2 */
 
@@ -528,16 +484,15 @@
 /* MD들이 신중하게 골랐어요 */
 
 #MD_choice {
-    width: 1175px;
+    width: 100%;
     height: auto;
-
     margin: 65px auto 0;
 }
 
 #md_top {
-    width: 100%;
+    width: 1175px;
     height: 35px;
-
+    margin:0 auto;
     display: flex;
     align-items: center;
 }
@@ -588,10 +543,8 @@
 
 #md_slider {
     width: 1175px;
-
     margin: 0 auto;
     margin-top: 15px;
-
     position: relative;
 }
 
@@ -749,24 +702,86 @@
 }
 
 
-/* 나만의 취향으로 가득 채운 책상 풍경 */
+/* 집중력을 높여줄 데스크 셋업 */
+#setup {
+    width: 100%;
+    height: auto !important;
+    margin: 60px auto 0;
+}
+
+#mychoice{
+    width:1175px;
+    margin:0 auto;
+}
 
 #mychoice .container {
     position: relative;
-
-    margin: 65px auto 0;
+    margin: 0 auto;
 }
 
 .mychoice_Slider {
-    width: 100%;
+    width: 1175px;
     height: 310px;
+    margin:0 auto;
 }
 
 .mychoice_Slider .slide_content {
     width: 180px;
     height: 180px;
-
     text-align: left;
+}
+
+#mychoice .swiper-slide {
+    width: 100%;
+    height: 310px;
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#mychoice .swiper-slide p {
+    margin: 0;
+}
+
+/* 교보문고가 만들었어요 */
+
+#MadeByKyobo {
+    width: 1175px;
+    height: auto !important;
+    margin: 30px auto 0;
+}
+
+#kyobo_slider .container {
+    position: relative;
+    margin: 0 auto;
+}
+
+.kyobo
+_Slider {
+    width: 100%;
+    height: 310px;
+}
+
+.kyobo_Slider .slide_content {
+    width: 180px;
+    height: 180px;
+    text-align: left;
+}
+
+#kyobo_slider .swiper-slide {
+    width: 100%;
+    height: 310px;
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#kyobo_slider .swiper-slide p {
+    margin: 0;
 }
 
 
@@ -803,19 +818,17 @@
 
 #AI {
     display: flex;
-
+    width:1175px;
     margin: 65px auto 0;
 }
 
 #AIPicks_info {
     width: 250px;
     height: 300px;
-
+    margin-top:50px;
     background-color: #fff;
     border-radius: 15px;
-
     box-sizing: border-box;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -926,15 +939,16 @@ h2 {
 
 
 /* 베스트 */
-
-#best {
+#section6 {
     width: 100%;
     height: 600px;
-
     margin: 65px auto 0;
-
     background-color: #eee;
+}
 
+#best{
+    width:1175px;
+    margin:0 auto;
     display: flex;
 }
 
@@ -942,38 +956,30 @@ h2 {
     width: 200px;
     height: 100%;
 
-    border: 1px solid black;
 }
 
 #best_left ul,
 p {
     margin-top: 40px;
 }
-
 #best_left p {
     text-decoration: bold;
 }
-
 #a {
     display: flex;
     justify-content: space-between;
 }
-
 #best_right {
     width: 900px;
-
+    display: flex;
     flex-grow: 1;
-
     display: grid;
-
     grid-template-columns: repeat(5, 1fr);
-
     gap: 20px 16px;
 }
 
 .best_books {
     height: 280px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1027,23 +1033,36 @@ p {
 
 /* 교보문고에서만 만날 수 있어요 */
 
-.OK_item {
-    width: 180px;
-    height: auto;
-
-    display: flex;
-
+#OnlyKyobo {
+    width: 1175px;
     margin: 65px auto 0;
+    position: relative;
+}
+
+#OnlyKyobo h2{
+    margin:0 0 25px 0;
 }
 
 #items {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 25px;
+}
+
+.OK_item {
+    width: 180px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    flex-shrink:0;
 }
 
 .OK_item img {
     width: 180px;
     height: 180px;
+    object-fit: cover;
 }
 
 
@@ -1053,7 +1072,7 @@ p {
     width: 1175px;
     height: 150px;
 
-    margin: 0 auto;
+    margin: 65px auto 0;
 }
 
 .big_ad img {
@@ -1068,7 +1087,7 @@ p {
 #casting {
     width: 1175px;
 
-    margin: 0 auto;
+    margin: 50px auto 0;
 
     position: relative;
 }
@@ -1107,7 +1126,7 @@ p {
     width: 1175px;
     height: 250px;
 
-    margin: 0 auto;
+    margin: 50px auto 0;
 }
 
 .event_slider {
@@ -1166,5 +1185,241 @@ p {
     color: #333;
 }
 
+/* 모든 버튼 설정 */
+#tc_slider .swiper-button-prev,
+#tc_slider .swiper-button-next {
+    --swiper-theme-color: #999;
+    --swiper-navigation-color: #999;
 
-/* 슬라이드 버튼 설정 */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tc_slider .swiper-button-prev {
+    left: -50px;
+}
+
+#tc_slider .swiper-button-next {
+    right: -50px;
+}
+
+#tc_slider .swiper-button-prev::after,
+#tc_slider .swiper-button-next::after {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+}
+
+#md_slider .swiper-button-prev,
+#md_slider .swiper-button-next {
+    --swiper-theme-color: #999;
+    --swiper-navigation-color: #999;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#md_slider .swiper-button-prev {
+    left: -50px;
+}
+
+#md_slider .swiper-button-next {
+    right: -50px;
+}
+
+#md_slider .swiper-button-prev::after,
+#md_slider .swiper-button-next::after {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+}
+
+#recommend_slider .swiper-button-prev,
+#recommend_slider .swiper-button-next {
+    --swiper-theme-color: #999;
+    --swiper-navigation-color: #999;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#recommend_slider .swiper-button-prev {
+    left: -50px;
+}
+
+#recommend_slider .swiper-button-next {
+    right: -50px;
+}
+
+#recommend_slider .swiper-button-prev::after,
+#recommend_slider .swiper-button-next::after {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+}
+
+#performance_slider .swiper-button-prev,
+#performance_slider .swiper-button-next {
+    --swiper-theme-color: #999;
+    --swiper-navigation-color: #999;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#performance_slider .swiper-button-prev {
+    left: -50px;
+}
+
+#performance_slider .swiper-button-next {
+    right: -50px;
+}
+
+#performance_slider .swiper-button-prev::after,
+#performance_slider .swiper-button-next::after {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+}
+
+#mychoice .swiper-button-prev,
+#mychoice .swiper-button-next {
+    --swiper-theme-color: #999;
+    --swiper-navigation-color: #999;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mychoice .swiper-button-prev {
+    left: -50px;
+}
+
+#mychoice .swiper-button-next {
+    right: -50px;
+}
+
+#mychoice .swiper-button-prev::after,
+#mychoice .swiper-button-next::after {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+}
+
+#POD .swiper-button-prev,
+#POD .swiper-button-next {
+    --swiper-theme-color: #999;
+    --swiper-navigation-color: #999;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#POD .swiper-button-prev {
+    left: -50px;
+}
+
+#POD .swiper-button-next {
+    right: -50px;
+}
+
+#POD .swiper-button-prev::after,
+#POD .swiper-button-next::after {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+}
+
+#casting .swiper-button-prev,
+#casting .swiper-button-next {
+    --swiper-theme-color: #999;
+    --swiper-navigation-color: #999;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#casting .swiper-button-prev {
+    left: -50px;
+}
+
+#casting .swiper-button-next {
+    right: -50px;
+}
+
+#casting .swiper-button-prev::after,
+#casting .swiper-button-next::after {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+}
