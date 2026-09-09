@@ -1,0 +1,626 @@
+@charset "UTF-8";
+
+/* =========================
+   Book Info
+========================= */
+
+#book_info {
+    width: 100%;
+}
+
+/* 구분선 */
+hr {
+    margin-top: 15px;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+
+/* =========================
+   카테고리
+========================= */
+
+#category {
+    width: 1175px;
+    margin: 20px auto 0;
+}
+
+#category i {
+    margin-left: 4px;
+    font-size: 14px;
+    color: #555;
+}
+
+#category ul {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 10px;
+}
+
+
+/* =========================
+   상품 제목 / 설명
+========================= */
+
+#info_main {
+    width: 1175px;
+    margin: 0 auto;
+}
+
+#text_info {
+    width: 100%;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+#text_info h2 {
+    margin: 10px 0 5px;
+}
+
+#text_info p {
+    margin: 0 0 15px;
+    font-size: 13px;
+}
+
+
+/* =========================
+   가격 탭
+========================= */
+
+.price-tabs {
+    width: 380px;
+    height: 60px;
+    margin: 0 auto 30px;
+
+    display: flex;
+    gap: 8px;
+
+    padding: 6px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.price-tab {
+    height: 60px;
+    flex: 1;
+
+    padding: 10px 0;
+    text-align: center;
+
+    border-radius: 8px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.price-tab .label {
+    margin: 0 0 4px;
+    font-size: 13px;
+    color: #999;
+}
+
+.price-tab .price {
+    margin: 0;
+    font-size: 14px;
+    color: #999;
+}
+
+/* 선택된 탭 */
+.price-tab.active {
+    background: #fff;
+    border: 1px solid #3f5ed5;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.price-tab.active .label {
+    color: #333;
+    font-weight: 500;
+}
+
+.price-tab.active .price {
+    color: #3f5ed5;
+    font-weight: 700;
+}
+
+
+/* =========================
+   상품 상세 영역
+========================= */
+
+#img_info {
+    width: 1175px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+/* =========================
+   왼쪽 정보
+========================= */
+
+#img_left {
+    width: 330px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    flex-shrink: 0;
+}
+
+#img_left p {
+    margin: 0;
+    font-size: 14px;
+    color: #222;
+}
+
+/* 저자 */
+#img_left .author span {
+    margin-right: 6px;
+    font-size: 13px;
+    color: #888;
+}
+
+/* 출판사 */
+#img_left .publisher {
+    margin-bottom: 4px;
+    font-size: 13px;
+    color: #3f5ed5;
+}
+
+/* 순위 */
+#img_left .rank {
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #666;
+}
+
+
+/* =========================
+   별점 박스
+========================= */
+
+#box1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 4px 0;
+    padding: 12px 16px;
+
+    border: 1px solid #eee;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: 700;
+    color: #2ea043;
+}
+
+
+/* =========================
+   신간 알림
+========================= */
+
+#notify {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#notify p {
+    font-size: 13px;
+    color: #333;
+}
+
+#alarm-btn {
+    padding: 8px 14px;
+
+    white-space: nowrap;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    font-size: 13px;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   프로모션
+========================= */
+
+#box2 {
+    padding: 12px 16px;
+
+    background: #fff2e0;
+    border-radius: 8px;
+
+    color: #8a4b0e;
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+/* 가운데 */
+#img_center {
+    width: 390px;
+    height: 390px;
+    flex-shrink: 0;
+}
+
+#img_center .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+#img_center .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+#img_center .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* 오른쪽 */
+
+#book_info_right {
+    width: 328px;
+    flex-shrink: 0;
+}
+
+.tag {
+    padding: 0;
+    margin: 0 0 20px;
+
+    list-style: none;
+}
+
+.tag li {
+    display: inline-block;
+
+    padding: 4px;
+
+    background-color: #dbeafe;
+    color: #1e40af;
+
+    font-size: 12px;
+}
+
+
+#price {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    margin-bottom: 20px;
+}
+
+.discount {
+    color: #166534;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sale_price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.original_price {
+    color: #666;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.info_row {
+    display: flex;
+    align-items: flex-start;
+
+    padding: 20px 0;
+
+    border-top: 1px solid #ddd;
+
+    font-size: 14px;
+}
+
+.info_title {
+    width: 80px;
+    flex-shrink: 0;
+
+    font-weight: bold;
+}
+
+.info_content {
+    flex: 1;
+
+    text-align: right;
+}
+
+.info_content p {
+    margin: 5px 0 0;
+
+    font-size: 12px;
+    color: #666;
+}
+
+.delivery {
+    color: #1e40af;
+}
+
+#store_btn {
+    width: 100%;
+    height: 38px;
+
+    background-color: white;
+    border: 1px solid #999;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+#service {
+    margin-top: 20px;
+    padding-top: 15px;
+
+    border-top: 1px solid #ddd;
+
+    font-size: 13px;
+}
+
+#service p {
+    margin: 8px 0;
+}
+
+/* 메뉴바 */
+#detail_nav{
+    width:100%;
+    margin-top:60px;
+}
+
+/* 상단 탭 */
+#main_tab{
+    width:1175px;
+    height:50px;
+    margin:0 auto;
+    display:flex;
+    list-style:none;
+    padding:0;
+}
+
+#main_tab li{
+    flex:1;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#main_tab button{
+    width:100%;
+    height:100%;
+    border:none;
+    font-size:14px;
+    background-color: white;
+    border-bottom: 1px solid #999;
+}
+
+/* 하단 메뉴 */
+#sub_tab{
+    width:1175px;
+    height:70px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    list-style:none;
+    padding:0;
+    border-bottom: 1px solid #999
+}
+#sub_tab li{
+    flex-shrink:0;
+    gap:5px;
+}
+
+#sub_tab button{
+    height:30px;
+    padding:0 15px;
+    border:1px solid #999;
+    background-color: white;
+    border-radius:20px;
+    font-size: 14px;;
+}
+
+#relation{
+    width: 1175px;
+    margin:0 auto;
+    margin-top:30px;
+}
+#rel_left{
+    width: 800px;
+}
+
+/* "AI 연관 추천" 타이틀 */
+#relation_slider > p{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0 0 18px;
+    color: #222;
+}
+#relation_slider > p i{
+    font-size: 14px;
+    color: #999;
+}
+
+.container{
+    width: 100%;
+}
+
+.swiper.relation_Slider{
+    width: 100%;
+    overflow: hidden;
+}
+.swiper-wrapper{
+    display: flex;
+    gap: 10px;
+}
+
+/* 한 화면에 5개씩 보이도록 */
+.swiper-slide{
+    flex: 0 0 auto;
+    width: calc((100% - 64px) / 5); /* gap 16px * 4칸 = 64px */
+    display: flex;
+    flex-direction: column;
+}
+
+/* JS가 슬라이드 안에 직접 넣는 <img> */
+.swiper-slide img{
+    width: 80%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background: #f2f2f2;   /* 로딩 전 placeholder */
+}
+
+/* JS가 넣는 .book_info 블록 */
+.book_info{
+    display: flex;
+    flex-direction: column;
+}
+.book_info .book_category{
+    margin: 0 0 2px;
+    font-size: 12px;
+    color: #999;
+}
+.book_info h3{
+    margin: 0 0 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.book_info .book_author{
+    margin: 0 0 8px;
+    font-size: 12px;
+    color: #666;
+}
+.book_info .book_price{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #222;
+}
+
+/* Swiper 기본 scrollbar 모듈 */
+.swiper-scrollbar{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #eee;
+    margin-top: 20px;
+    border-radius: 2px;
+}
+.swiper-scrollbar-drag{
+    background: #333;
+    border-radius: 2px;
+}
+
+#rel_left > #relation_slider,
+#rel_left > #basic_info,
+#rel_left > #section,
+#rel_left > #introduce,
+#rel_left > #into_book{
+    width: 100%;
+    margin-top: 50px;         /* 섹션 사이 간격 */
+    padding-top: 30px;
+    border-top: 1px solid #eee;  /* 섹션 구분선 */
+}
+
+#rel_left > #relation_slider{
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+#basic_info > p:first-child,
+#section > p:first-child,
+#introduce > p:first-child,
+#into_book > p:first-child{
+    font-size: 17px;
+    font-weight: 700;
+    color: #222;
+    margin: 0 0 18px;
+}
+
+/* rel_right */
+#rel_right{
+    width: 275px;
+}
+
+/* rel_right */
+#rel_right{
+    width: 275px;
+}
+
+#find_slider h4{
+    margin: 0 0 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #222;
+}
+
+#find_slider .container{
+    width: 100%;
+    overflow: hidden;   /* 넘치는 슬라이드는 잘라서 숨김 */
+}
+
+.swiper.find_Slider{
+    width: 100%;
+}
+
+.find_Slider .swiper-wrapper{
+    display: flex;
+    gap: 8px;            /* 카드 사이 간격 */
+}
+
+/* 핵심: 슬라이드 폭을 고정값으로 지정 */
+.find_Slider .swiper-slide{
+    flex: 0 0 auto;
+    width: 130px;         /* 275px 컨테이너에 카드 2개(+살짝 다음 카드)가 보이는 크기 */
+    aspect-ratio: 1 / 1;  /* 정사각형 카드 */
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.find_Slider .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* 비율 안 맞아도 잘려서 꽉 채움 */
+    display: block;
+}

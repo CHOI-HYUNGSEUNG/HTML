@@ -1,0 +1,457 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <script src="./js/sub.js" defer></script>
+        <link rel="stylesheet" href="./css/sub.css">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/common.css">
+
+        <title>교보문고 서브페이지</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <div id="wrap">
+            <header>
+                <div id="header_ad"><img src="./img/main/header_ad.jpg" alt="상단 광고"></div>
+                <div id="header_top">
+                    <div id="nav">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="484" height="32" style="overflow:visible;">
+                            <g transform="translate(4 0)"><g><a draggable="false" class="service_mall_link" aria-disabled="false" href="https://www.kyobobook.co.kr/"><path d="M0 0.0173792H84.361C84.361 0.0173792 99.2952 -1.02301 106.196 12.9956C113.924 28.6956 121.181 32 132 32H0V0.0173792Z" transform="translate(0 0)" fill="#474BAA"></path><text x="35" y="15" dy=".5em" fill="#ffffff" class="font-bold fz-14">교보문고</text></a></g></g>
+                            <g transform="translate(89 0)"><g><a draggable="false" class="service_mall_link" aria-disabled="false" href="https://ebook.kyobobook.co.kr/"><path d="M135.995 31.9952H47.0166C44.445 32.0391 41.8775 31.7836 39.3696 31.2348C36.9695 30.6886 34.6941 29.7228 32.6571 28.3846C28.2668 25.4961 24.4518 20.607 20.6519 12.9973C18.4194 8.32105 14.5528 4.54662 9.72679 2.33129C6.67335 0.953423 3.36879 0.167557 0 0.0179913H87.913C88.0047 0.0121735 88.2475 0 88.6253 0C91.927 0.0355248 95.1902 0.687677 98.234 1.91939C100.57 2.86606 102.726 4.18222 104.61 5.81403C106.91 7.84018 108.776 10.2795 110.104 12.9945C113.898 20.6042 117.712 25.4932 122.103 28.3818C124.139 29.7198 126.413 30.6856 128.812 31.232C131.169 31.7519 133.582 32.0066 136 31.9904L135.995 31.9952Z" transform="translate(0 0)" fill="#3F5ED5"></path><text x="48" y="14" dy=".5em" fill="#ffffff" class="font-bold fz-14">eBook</text></a></g></g>
+                            <g transform="translate(177 0)"><g><a draggable="false" class="service_mall_link" aria-disabled="false" href="https://sam.kyobobook.co.kr/"><path d="M135.995 31.9952H47.0166C44.445 32.0391 41.8775 31.7836 39.3696 31.2348C36.9695 30.6886 34.6941 29.7228 32.6571 28.3846C28.2668 25.4961 24.4518 20.607 20.6519 12.9973C18.4194 8.32105 14.5528 4.54662 9.72679 2.33129C6.67335 0.953423 3.36879 0.167557 0 0.0179913H87.913C88.0047 0.0121735 88.2475 0 88.6253 0C91.927 0.0355248 95.1902 0.687677 98.234 1.91939C100.57 2.86606 102.726 4.18222 104.61 5.81403C106.91 7.84018 108.776 10.2795 110.104 12.9945C113.898 20.6042 117.712 25.4932 122.103 28.3818C124.139 29.7198 126.413 30.6856 128.812 31.232C131.169 31.7519 133.582 32.0066 136 31.9904L135.995 31.9952Z" transform="translate(0 0)" fill="#1EA5A8"></path><text x="53" y="13.5" dy=".5em" fill="#ffffff" class="font-bold fz-16">sam</text></a></g></g>
+                            <g transform="translate(265 0)"><g><a draggable="false" class="service_mall_link" aria-disabled="false" href="https://hottracks.kyobobook.co.kr/"><path d="M135.995 31.9952H47.0166C44.445 32.0391 41.8775 31.7836 39.3696 31.2348C36.9695 30.6886 34.6941 29.7228 32.6571 28.3846C28.2668 25.4961 24.4518 20.607 20.6519 12.9973C18.4194 8.32105 14.5528 4.54662 9.72679 2.33129C6.67335 0.953423 3.36879 0.167557 0 0.0179913H87.913C88.0047 0.0121735 88.2475 0 88.6253 0C91.927 0.0355248 95.1902 0.687677 98.234 1.91939C100.57 2.86606 102.726 4.18222 104.61 5.81403C106.91 7.84018 108.776 10.2795 110.104 12.9945C113.898 20.6042 117.712 25.4932 122.103 28.3818C124.139 29.7198 126.413 30.6856 128.812 31.232C131.169 31.7519 133.582 32.0066 136 31.9904L135.995 31.9952Z" transform="translate(0 0)" fill="#E8422F"></path><text x="42" y="15" dy=".5em" fill="#ffffff" class="font-bold fz-14">핫트랙스</text></a></g></g>
+                            <g transform="translate(353 0)"><g><a draggable="false" class="service_mall_link" aria-disabled="false" href="https://store.kyobobook.co.kr/pod"><path d="M135.995 31.9952H47.0166C44.445 32.0391 41.8775 31.7836 39.3696 31.2348C36.9695 30.6886 34.6941 29.7228 32.6571 28.3846C28.2668 25.4961 24.4518 20.607 20.6519 12.9973C18.4194 8.32105 14.5528 4.54662 9.72679 2.33129C6.67335 0.953423 3.36879 0.167557 0 0.0179913H87.913C88.0047 0.0121735 88.2475 0 88.6253 0C91.927 0.0355248 95.1902 0.687677 98.234 1.91939C100.57 2.86606 102.726 4.18222 104.61 5.81403C106.91 7.84018 108.776 10.2795 110.104 12.9945C113.898 20.6042 117.712 25.4932 122.103 28.3818C124.139 29.7198 126.413 30.6856 128.812 31.232C131.169 31.7519 133.582 32.0066 136 31.9904L135.995 31.9952Z" transform="translate(0 0)" fill="#d5d5d5"></path><path d="M121.828 28.7996C123.66 30.0032 125.679 30.9125 127.806 31.4952H47.0166V31.4951L47.0081 31.4952C44.4759 31.5385 41.9478 31.287 39.4784 30.7468C37.1367 30.2136 34.9175 29.2714 32.9317 27.9667C28.6481 25.1483 24.8828 20.35 21.1012 12.7779C18.8166 7.99502 14.8635 4.13906 9.93539 1.87688L9.93539 1.87687L9.93245 1.87555C8.72698 1.33158 7.48321 0.878194 6.2122 0.517991H87.913H87.9289L87.9447 0.516988C88.0256 0.511856 88.2569 0.500058 88.6226 0.5C91.8611 0.535181 95.0615 1.17502 98.0463 2.38279C100.332 3.30878 102.439 4.59572 104.281 6.1904C106.531 8.17342 108.356 10.5597 109.654 13.2141L109.656 13.2176C113.469 20.8625 117.331 25.8412 121.828 28.7995L121.828 28.7996Z" transform="translate(0 0)" fill="#ffffff" stroke="#d5d5d5"></path><text x="42" y="15" dy=".5em" fill="#767676" class="font-medium fz-14">바로출판</text></a></g></g>
+                        </svg>
+                    </div>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="#">회원가입</a></li>
+                            <li>|</li>
+                            <li><a href="#">로그인</a></li>
+                            <li>|</li>
+                            <li><a href="#">회원혜택</a></li>
+                            <li>|</li>
+                            <li><a href="#">주문배송</a></li>
+                            <li>|</li>
+                            <li><a href="#">매장안내</a></li>
+                            <li>|</li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="header_main">
+                    <div id="main_left">
+                        <div id="main_logo"><a href="#"><img src="./img/main/logo.svg" alt="교보문고 로고"></a></div>
+                        <div id="main_search">
+                            <form action="">
+                                <select name="category" id="category">
+                                    <option value="all">통합검색</option>
+                                    <option value="eBook">eBook</option>
+                                    <option value="sam">sam</option>
+                                    <option value="hot_tracks">핫트랙스</option>
+                                </select>
+                                <p>|</p>
+                                <input type="text" name="search" placeholder="조선을 뒤흔든 희대의 범죄 파일이 열린다">
+                                <input type="submit" value="돋보기">
+                            </form>
+                        </div>
+                    </div>
+                    <div id="main_right">
+                        <div class="icon">장바구니</div>
+                        <div class="icon">Mypage</div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Div1 -->
+            <div id="div1">
+                <div id="div1_top">
+                    <div id="div1_nav">
+                        <button class="all_menu_btn" aria-label="전체메뉴">menu</button>
+                        <ul>
+                            <li><a class="highlight badge" href="#">신학기혜택</a></li>
+                            <li><a class="highlight badge" href="#">버핏과멍거</a></li>
+                            <li><a href="#">베스트</a></li>
+                            <li><a href="#">신상품</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">바로펀딩</a></li>
+                            <li><a href="#">PICKS</a></li>
+                            <li><a href="#">CASTing</a></li>
+                            <li><a href="#">컬처라운지 </a></li>
+                            <li><button id="more_btn">+</button></li> 
+                        </ul>
+                    </div>
+                    <div id="div1_mission">
+                        <ul>
+                            <li><a href="#">오늘의 미션</a></li>
+                            <li><a href="#">할인혜택</a></li>
+                            <li><a href="#">읽는사람들 2회차 ▼</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div id="book_page">
+
+            <!-- 카테고리 -->
+            <div id="category">
+                <ul>
+                    <li><i class="fa-solid fa-house"></i></li>
+                    <li>/</li>
+                    <li><a href="#">국내도서<i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li>/</li>
+                    <li><a href="#">과학<i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li>/</li>
+                    <li><a href="#">교양과학<i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li>/</li>
+                    <li><a href="#">과학이야기<i class="fa-solid fa-chevron-down"></i></a></li>
+                </ul>
+            </div>
+
+
+            <!-- 책 정보 전체 -->
+            <div id="book_content">
+
+            <!-- 책 제목 -->
+            <div id="text_info">
+                <h2>비전공자도 이해할 수 있는 LLM 수업</h2>
+                <p>
+                    챗GPT, 클로드, 제미나이부터 AI 에이전트,
+                    글쓰기·코딩까지 생성형 AI에 관한 모든 기초 지식
+                </p>
+            </div>
+
+
+            <!-- 가격 탭 -->
+            <div class="price-tabs">
+
+                <div class="price-tab active">
+                    <p class="label">국내도서</p>
+                    <p class="price">18,900원</p>
+                </div>
+
+                <div class="price-tab">
+                    <p class="label">eBook</p>
+                    <p class="price">13,230원</p>
+                </div>
+
+            </div>
+
+
+            <!-- 책 상세 정보 -->
+            <div id="img_info">
+
+                <!-- 왼쪽 -->
+                <div id="img_left">
+
+                    <p class="author">
+                        박상길 저자(글) 정진호 그림/만화
+                    </p>
+
+                    <p class="publisher">
+                        비즈니스북스 · 2026년 08월 31일
+                    </p>
+
+                    <p class="rank">
+                        주간베스트 국내도서 973위 과학 19위
+                    </p>
+
+                    <div id="box1">
+                        리뷰
+                    </div>
+
+                    <div id="notify">
+                        <p>신간 소식 가장 먼저 받아보세요</p>
+                        <div id="alarm-btn">
+                            알람신청
+                        </div>
+                    </div>
+
+                    <div id="box2">
+                        이기적 유전자 50주년 기념판 X 크리스탈 문진
+                    </div>
+
+                </div>
+
+
+                <!-- 가운데 -->
+                <div id="img_center">
+                    <div id="book_slider">
+                        <div class="container">
+                            <div class="swiper book_Slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"></div>
+                                    <div class="swiper-slide"></div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 오른쪽 -->
+                <div id="img_right">
+                    <ul class="tag">
+                        <li>MD의 선택</li>
+                    </ul>
+                    <div id="price">
+                        <span class="discount">10%</span>
+                        <span class="sale_price">18,900원</span>
+                        <span class="original_price">21,000원</span>
+                    </div>
+                    <div class="info_row">
+                        <div class="info_title">통합포인트</div>
+                        <div class="info_content">
+                            <strong>1,050P</strong>
+                            <span>(5% 적립)</span>
+                            <p>5만원 이상 구매 시 2천원 추가 적립</p>
+                        </div>
+                    </div>
+                    <div class="info_row">
+                        <div class="info_title">결제혜택</div>
+                        <div class="info_content">카드/간편결제 혜택을 확인해 보세요!</div>
+                    </div>
+                    <div class="info_row">
+                        <div class="info_title">배송비</div>
+                        <div class="info_content">무료배송</div>
+                    </div>
+                    <div class="info_row">
+                        <div class="info_title">
+                            배송안내
+                        </div>
+                        <div class="info_content">
+                            <span class="tag">새벽배송</span>
+                            <strong class="delivery">내일(목) 오전 7시 전 도착</strong>
+                            <p>로그인 후 정확한 배송안내 받아보세요!</p>
+                        </div>
+                    </div>
+                    <button id="store_btn">📍 매장 재고 · 위치</button>
+                    <div id="service">
+                        <p>· 해외배송 가능</p>
+                        <p>· 문화비소득공제 신청 가능</p>
+                        <p>· 책 그리고 꽃 주문 가능</p>
+                    </div>
+                </div>
+            </div>
+                <div id="detail_nav">
+                    <ul id="main_tab">
+                        <li class="active"><button>도서정보</button></li>
+                        <li><button>리뷰 <span>(16)</span></button></li>
+                        <li><button>교환/반품/품절</button></li>
+                    </ul>
+                    <ul id="sub_tab">
+                        <li class="active"><button>추천상품</button></li>
+                        <li><button>책 소개</button></li>
+                        <li><button>상세이미지</button></li>
+                        <li><button>목차</button></li>
+                        <li><button>책속으로</button></li>
+                        <li><button>작가정보</button></li>
+                        <li><button>출판사리뷰</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="relation">
+                <div id="rel_left">
+                    <!-- AI 연관 추천 -->
+                    <div id="relation_slider">
+                        <p>AI 연관 추천</p>
+                        <div class="container">
+                            <div class="swiper relation_Slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"></div>
+                                    <div class="swiper-slide"></div>
+                                    <div class="swiper-slide"></div>
+                                    <div class="swiper-slide"></div>
+                                    <div class="swiper-slide"></div>
+
+                                    <div class="swiper-slide"></div>
+                                    <div class="swiper-slide"></div>
+                                    <div class="swiper-slide"></div>
+                                    <div class="swiper-slide"></div>
+                                    <div class="swiper-slide"></div>
+
+                                    <div class="swiper-slide"></div>
+                                    <div class="swiper-slide"></div>
+                                    <div class="swiper-slide"></div>
+                                    <div class="swiper-slide"></div>
+                                    <div class="swiper-slide"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="basic_info">
+                        <h3>기본정보</h3>
+                        <p>ISBN 9791162545010</p>
+                        <p>발행(출시)일자 2026년 08월 31일</p>
+                        <p>쪽수/크기  400쪽|146*220*30mm / 685g</p>
+                    </div>
+                    <div id="section">
+                        <h3>이 책이 속한 분야</h3>
+                        <p>국내도서 > 과학 > 교양과학 > 과학이야기</p>
+                        <p>국내도서 > 경제/경영 > 경제일반 > 경제전망</p>
+                    </div>
+                    <div id="introduce">
+                        <p>20만 스테디셀러 ‘AI 지식’ 시리즈, 그 세 번째 이야기!
+                            <br>생성형 AI의 핵심 원리와 최신 흐름을 한 권으로 읽는다!</p>
+                        <p>챗GPT 하나만 알던 시대는 끝났다!<br>
+                            클로드, 제미나이부터 미드저니, 클로드 코드, 오픈클로까지 AI 도구는 하루가 다르게 늘어난다. 이제는 하나의 AI를 잘 쓰는 것을 넘어 목적에 맞는 AI를 <br> 
+                            자유자재로 활용하는 능력이 경쟁력이 되는 시대. 쏟아지는 AI 기술과 정보 속에서 우리가 반드시 알아야 할 지식은 무엇일까?<br>
+                            이 책은 GPT-5 이후 격화되는 AI 거인들의 경쟁 구도를 짚고, 허깅페이스·퍼플렉시티 같은 새로운 플랫폼의 부상을 읽는다. 글쓰기·코딩·이미지·영상으로 <br>
+                            뻗어나가는 LLM의 실전 활용법과 프롬프트 작성법을 정리하고, 본격화되는 에이전트 시대의 흐름까지 담는다. 로컬 LLM과 SLM, 오픈소스 생태계, 무섭<br>
+                            게 치고 올라오는 중국 AI 그리고 한국의 독자 파운데이션 모델(독파모)이 마주한 과제까지, 지금 꼭 알아야 할 생성형 AI의 흐름을 한 권으로 그린다.<br>
+                            넘쳐나는 기술에 휩쓸리지 않고 변화의 흐름을 읽고 싶다면 지금 이 책으로 생성형 AI의 다음 시대를 준비해보기 바란다.
+                        </p>
+                        <img src="./img/main/introduce.jpg" alt="">
+                        <div id="chapter">
+                        <p>목차<br>
+                            들어가며<br>
+
+                            제1부. AI 거인들의 전쟁과 도전자들<br>
+
+                            제1장. 마침내 GPT-5 등장하다<br>
+                            GPT-5 시대의 개막<br>
+                            인류의 마지막 시험<br>
+                            인공지능, 후반전을 맞이하다<br>
+                        </p>
+                    <p id="into_book">
+                        책 속으로<br>
+                        LM의 능력을 마법처럼 끌어올리는 RAG, 내 책상 위에서 직접 돌리는 인공지능 로컬 모델, 글쓰기에 LLM을 200퍼센트 활용하는 노하우, 미드저니와 나노 바나나로 <br> 
+                        대표되는 이미지생성과 영상 생성의 놀라움, 외로움을 달래 주는 AI 컴패니언(친구 또는 동반자), 커서와 클로드 코드가 송두리째 바꿔 놓은 코딩의 풍경 <br>
+                        그리고 MCP와 스킬스를 거쳐 마침내 스스로 일하는 에이전트의 등장까지. 지금 이 순간 가장 뜨겁게 달아오르는 주제들을 하나씩 풀어냈습니다. <br>
+                        단순한 개념 소개에 그치지 않고 상세한 동작 원리와 함께 제가 실제로 쓰는 프롬프트와 사례까지 아낌없이 담았습니다.<br>
+                        - ‘들어가며’ 중에서
+                    </p>
+                    </div>
+                </div>
+                <div id="rel_right">
+                    <div id="find_slider">
+                        <h4>기분 좋은 발견</h4>
+                        <div class="container">
+                            <div class="swiper find_Slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="./img/main/find1.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="./img/main/fin2.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="./img/main/find3.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="./img/main/find4.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="./img/main/find5.jpg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- Footer -->
+            <footer>
+                <div id="footer_top">
+                    <hr>
+                    <div id="footer_notice">
+                        <a href="#"><b>공지사항 ></b></a>
+                        <a href="#" style="margin-left:15px;">회원등급 산정 순수구매액'교보e캐시'적용 기준 변경 안내</a>
+                    </div>
+                    <div id="footer_more">
+                        <a href="#">더보기+</a>
+                        <a href="#" style="margin-left:60px;"><b>당첨자발표</b></a>
+                        <a href="#" style="margin-left:40px;">[로맨스/BL소설][25년 8월]로B 50년 대여 (지연 안내)</a>
+                    </div>
+                    <hr>
+                </div>
+                <div id="footer_bottom">
+                    <div id="f_bottom_left">
+                        <div id="footer_logo"><img src="./img/main/logo.svg" alt="교보문고 로고"></div>
+                        <div id="footer_menu">
+                            <ul>
+                                <li><a href="#">회사소개</a></li>
+                                <li>|</li>
+                                <li><a href="#">이용약관</a></li>
+                                <li>|</li>
+                                <li><a href="#" style="text-decoration:underline;">개인정보처리방침</a></li>
+                                <li>|</li>
+                                <li><a href="#">청소년보호정책</a></li>
+                                <li>|</li>
+                                <li><a href="#">대량주문안내</a></li>
+                                <li>|</li>
+                                <li><a href="#">협력사여러분</a></li>
+                                <li>|</li>
+                                <li><a href="#">채용정보</a></li>
+                                <li>|</li>
+                                <li><a href="#">광고소개</a></li>
+                            </ul>
+                        </div>
+                        <div id="com_info">
+                            <ul>
+                                <li>대표이사:허정도</li>
+                                <li>|</li>
+                                <li>서울특별시 종로구 종로1</li>
+                                <li>|</li>
+                                <li>사업자등록번호:102-81-11670 </li>
+                            </ul>
+                            <ul>
+                                <li>대표전화:1544-1900(발신자 부담전화)</li>
+                                <li>|</li>
+                                <li>FAX:0502-987-5711(지역번호 공통)</li>
+                                <li>|</li>
+                                <li>서울특별시 통신판매업신고번호:제 653호</li>
+                                <li>|</li>
+                                <li>사업자정보확인</li>
+                            </ul>
+                        </div>
+                        <div id="footer_copyright"> ⓒKYOBO BOOK CENTRE</div>
+                    </div>
+                    <div id="f_bottom_right">
+                        <div id="footer_icons">
+                            <form action="">
+                                <select name="Failmy Site" id="family">
+                                    <option value="" default>Family Site</option>
+                                    <option value=""><a href="#">교보생명</a></option>
+                                    <option value=""><a href="#">교보증권</a></option>
+                                    <option value=""><a href="#">교보DTS</a></option>
+                                    <option value=""><a href="#">교보리얼코</a></option>
+                                    <option value=""><a href="#">교보악사자산운용</a></option>
+                                    <option value=""><a href="#">교보라이프플래닛생명</a></option>
+                                    <option value=""><a href="#">KCA 손해사정</a></option>
+                                    <option value=""><a href="#">KCA 서비스</a></option>
+                                    <option value=""><a href="#">교보자산신탁주식회사</a></option>
+                                    <option value=""><a href="#">교보AIM자산운용</a></option>
+                                    <option value=""><a href="#">교보다솜케어</a></option>
+                                    <option value=""><a href="#">A&D신용정보</a></option>
+                                    <option value=""><a href="#">대산문화재단</a></option>
+                                    <option value=""><a href="#">대산농촌재단</a></option>
+
+                                </select>
+                            </form>
+                        </div>
+                        <div id="footer_toss">
+                            <p>토스페이먼츠 구매안전서비스</p>
+                            <button style="font-size:10px;">서비스가입확인</button>
+                            <p>고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 토스페이먼츠의 구매안전서비스를 이용하실 수 있습니다.</p>
+                        </div>
+                        <div id="footer_ISMS">
+                            <div id="inner_ISMS">
+                                <img src="./img/main/ISMS.png" alt="">
+                                <p style="margin-left:5px;">정보보호관리체계 <br> ISMS인증획득</p>
+                            </div>
+                            <p>
+                                [인증범위]인터넷 교보문고 및 브랜드 서비스 운영<br>
+                                [유효기간]2023.11.15~2026.11.14
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <hr>
+    </body>
+</html>

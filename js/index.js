@@ -159,8 +159,6 @@ function initTCSwiper() {
         }
     );
 }
-
-
 TC_Book();
 
 
