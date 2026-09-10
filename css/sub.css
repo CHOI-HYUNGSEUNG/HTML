@@ -20,18 +20,18 @@ hr {
    카테고리
 ========================= */
 
-#category {
+#section {
     width: 1175px;
     margin: 20px auto 0;
 }
 
-#category i {
+#section i {
     margin-left: 4px;
     font-size: 14px;
     color: #555;
 }
 
-#category ul {
+#section ul {
     width: 30%;
     display: flex;
     justify-content: space-between;
@@ -450,6 +450,8 @@ hr {
     width: 1175px;
     margin:0 auto;
     margin-top:30px;
+    display:flex;
+    justify-content: space-between;
 }
 #rel_left{
     width: 800px;
@@ -580,47 +582,80 @@ hr {
     width: 275px;
 }
 
-/* rel_right */
-#rel_right{
-    width: 275px;
+#find_slider {
+  overflow: hidden;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
-#find_slider h4{
-    margin: 0 0 14px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 15px;
-    font-weight: 700;
-    color: #222;
+/* 카드 영역 밖은 숨김 */
+.find_Slider .swiper_slide{
+  overflow: hidden;
+  width:180px;
+  height:100px;
 }
 
-#find_slider .container{
-    width: 100%;
-    overflow: hidden;   /* 넘치는 슬라이드는 잘라서 숨김 */
+.findcard{
+    background-color: white;
 }
 
-.swiper.find_Slider{
-    width: 100%;
+.find-card img{
+    width: 180px;
+    object-fit: contain;
 }
 
-.find_Slider .swiper-wrapper{
-    display: flex;
-    gap: 8px;            /* 카드 사이 간격 */
+/* Fold-area */
+#introduce p{
+    font-size:13px;
+}
+.fold-area {
+  position: relative;
+  max-height: 220px;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
 }
 
-/* 핵심: 슬라이드 폭을 고정값으로 지정 */
-.find_Slider .swiper-slide{
-    flex: 0 0 auto;
-    width: 130px;         /* 275px 컨테이너에 카드 2개(+살짝 다음 카드)가 보이는 크기 */
-    aspect-ratio: 1 / 1;  /* 정사각형 카드 */
-    border-radius: 6px;
-    overflow: hidden;
+.fold-area.open {
+  max-height: 3000px;
 }
 
-.find_Slider .swiper-slide img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;    /* 비율 안 맞아도 잘려서 꽉 채움 */
-    display: block;
+.fold-button {
+  display: block;
+  margin: 12px 0 20px auto;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* 접힌 상태에서 아래가 자연스럽게 사라지는 효과 */
+.fold-area:not(.open)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 55px;
+  background: linear-gradient(transparent, white);
+}
+
+.fold-area.open {
+  max-height: 3000px; /* 충분히 큰 값 */
+}
+
+#foldButton {
+  display: block;
+  margin: 12px 0 20px auto; /* 오른쪽 배치 */
+  border: 0;
+  background: none;
+  cursor: pointer;
+  color: #555;
+}
+
+#foldButton span {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+#foldButton.active span {
+  transform: rotate(180deg);
 }

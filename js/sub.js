@@ -156,3 +156,72 @@ async function Relationinfo() {
     });
 }
 Relationinfo();
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  function loadTextFile(filePath, elementId) {
+    const xhr = new XMLHttpRequest();
+
+    xhr.open("GET", filePath, true);
+
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        const target = document.getElementById(elementId);
+
+        if (!target) {
+          console.error("#" + elementId + " 요소를 찾지 못했습니다.");
+          return;
+        }
+
+        // txt 내부의 HTML 태그도 적용하여 출력
+        target.innerHTML = xhr.responseText;
+
+        // 출력이 끝난 뒤 접기 기능 생성
+        makeFold(target);
+      } else {
+        console.error(filePath + " 파일을 불러오지 못했습니다. (" + xhr.status + ")");
+      }
+    };
+
+    xhr.onerror = function () {
+      console.error(filePath + " 요청 중 오류가 발생했습니다.");
+    };
+
+    xhr.send();
+  }
+
+  function makeFold(target) {
+    const foldArea = document.createElement("div");
+    foldArea.className = "fold-area";
+
+    // 각 대상 div를 fold-area로 감싸기
+    target.parentNode.insertBefore(foldArea, target);
+    foldArea.appendChild(target);
+
+    const foldButton = document.createElement("button");
+    foldButton.type = "button";
+    foldButton.className = "fold-button";
+    foldButton.innerHTML = '펼치기 <span>⌄</span>';
+
+    // 해당 내용 바로 아래에 버튼 추가
+    foldArea.insertAdjacentElement("afterend", foldButton);
+
+    // 내용 높이가 기준보다 작다면 버튼 숨김
+    if (foldArea.scrollHeight <= 220) {
+      foldButton.style.display = "none";
+      return;
+    }
+
+    foldButton.addEventListener("click", function () {
+      const isOpen = foldArea.classList.toggle("open");
+
+      foldButton.innerHTML = isOpen
+        ? '접기 <span>⌃</span>'
+        : '펼치기 <span>⌄</span>';
+    });
+  }
+
+  loadTextFile("./sub_txt/Bookinfo1.txt", "intro");
+  loadTextFile("./sub_txt/Bookinfo2.txt", "chapter");
+  loadTextFile("./sub_txt/Bookinfo3.txt", "intobook");
+});
